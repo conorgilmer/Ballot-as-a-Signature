@@ -1,10 +1,5 @@
-# Ballot-as-a-Signature
-Ballot as a Signature in PR-STV elections
-Using the permutaitons in a single transferrable vote to uniquely identify a ballot.
-
 #Political Compass
-The politcal compass is tool used to position political opinions of an individual or party on a specturm, in this case a two dime
-sional spectrum, with a left-right x-axis and authoritarian-libertarian y-axis, although other metrics could be used.
+The politcal compass is tool used to position political opinions of an individual or party on a specturm, in this case a two dimesional spectrum, with a left-right x-axis and authoritarian-libertarian y-axis, although other metrics could be used.
 ## Data for Irish parties on the Political Compass [pc.csv](/data/pc.csv)
 Data from 2002, when eVoting trial was conducted.
 | Parties as of 2002  |Initials| X    | Y     |
