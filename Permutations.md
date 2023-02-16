@@ -25,7 +25,7 @@ Pref(r)	| n=9	 | n=12	     | n = 14
 14	|        |	     | 87178291200
 
 ## Generate All Permutations (nPr) for Constituencies win r=7
-Running **[GenAll-nPr.py](/python/py/GenAll-nPr.py)**
+Running **[GenAll-nPr.py](/python/GenAll-nPr.py)**
 
 Constituency | Candidates | Preferences(r) |    nPr   | Filesize
 -------------|:----------:| :------------: | -------: | ---------:
