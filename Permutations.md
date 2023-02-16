@@ -5,10 +5,9 @@ The number of permutations(P) for r preferences cast, for an election with n can
 
 nPr = P(n,r) = n!/(n-r)!
 
-### Number of all possible Permutations nPr, for constituenceis with 9, 12, or 14 candidates(r) 
+### Number of all possible Permutations nPr (preferences cast), for constituenceis with 9, 12, or 14 candidates(r) 
 
 Pref(r)	| n=9	 | n=12	     | n = 14
-        | Dublin West | Dublin North | Meath
 ------: |------: |---------: |-----------:
 1	| 9	 | 12	     | 14
 2	| 72	 | 132	     |  182
