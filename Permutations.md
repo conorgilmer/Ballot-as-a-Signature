@@ -33,3 +33,7 @@ Dublin West  |      9     |      7         |   181440 |   6602200
 Dublin North |     12     |      7         |  3991680 | 162547817
 Meath        |     14     |      7         | 17297280 | 749969267
 
+
+## Difference between Permutations and Combinations
+The terms permutaion and combination are often used interchangable however in Mathematics there is a difference, a permutation is an ordered combination of numbers. In our case we use the term Permutation to describe a sequence of numbers which do NOT repeat. **[Maths is fun](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)**
+
