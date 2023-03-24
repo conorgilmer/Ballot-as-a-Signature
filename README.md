@@ -10,16 +10,16 @@ The number of permutations(P) for r preferences cast, for an election with n can
 
 nPr = P(n,r) = n!/(n-r)!    
 
-Calculate number of permutations **[PermutationsCalc.py](/python/py/PermutationsCalc.py)**  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PermutationsCalc.ipynb)
+Calculate number of permutations **[PermutationsCalc.py](/python/PermutationsCalc.py)**  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/PermutationsCalc.ipynb)
 
 ## Tasks
 ### Data Gathering and Generation
 - plot irish political parites on the Political Compass ([politicalcompass.org](https://politicalcompass.org/ireland2020))
-- **[PoliticalCompassParties.ipynb](/python/PoliticalCompassParties.ipynb)** - plot parties on political compass axes [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PoliticalCompassParties.ipynb)
-- **[PlotRegularVoteTransfers.ipynb](/python/PlotRegularVoteTransfers.ipynb)** - plot regular voting pattern (between similar ideologies) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PlotRegularVoteTransfers.ipynb)
-- **[PlotIrregularVoteTransfers.ipynb](/python/PlotIrregularVoteTransfers.ipynb)** - plot irregular voting pattern.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PlotIrregularVoteTransfers.ipynb)
+- **[PoliticalCompassParties.ipynb](/notebooks/PoliticalCompassParties.ipynb)** - plot parties on political compass axes [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/PoliticalCompassParties.ipynb)
+- **[PlotRegularVoteTransfers.ipynb](/notebooks/PlotRegularVoteTransfers.ipynb)** - plot regular voting pattern (between similar ideologies) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/PlotRegularVoteTransfers.ipynb)
+- **[PlotIrregularVoteTransfers.ipynb](/notebooks/PlotIrregularVoteTransfers.ipynb)** - plot irregular voting pattern.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/PlotIrregularVoteTransfers.ipynb)
 
-- **[VoteDataAnalysis.ipynb](/python/VoteDataAnalysis.ipynb)** - analyse data from e-voting trial from 2002
+- **[VoteDataAnalysis.ipynb](/notebooks/VoteDataAnalysis.ipynb)** - analyse data from e-voting trial from 2002
   - number of preferences cast
   - mode
   - median
@@ -32,26 +32,26 @@ Calculate number of permutations **[PermutationsCalc.py](/python/py/Permutations
   - generate bar chart ratio of votes used to possible votes cast for each preference
   - calculate "votes" euclidean distance and average euclidean distance for each transfer
   - classify as "regular" write to *regular* csv file
-- **[GenAll-nPr.py](/python/py/GenAll-nPr.py)** 
+- **[GenAll-nPr.py](/python/GenAll-nPr.py)** 
   - generate all permutations nPr (r=7)
-- **[GenVoteDataAnalysis.ipynb](/python/GenVoteDataAnalysis.ipynb)** - analyse generated data
+- **[GenVoteDataAnalysis.ipynb](/notebooks/GenVoteDataAnalysis.ipynb)** - analyse generated data
   - calculate "votes" euclidean distance and average euclidean distance for each transfer
   - select rows with euclidean distance greater than max of "Regular" votes
   - classify as "Irregular" write to *irregular* csv file
-- **[RandGen-nPr.ipynb](/python/RandGen-nPr.ipynb)** 
+- **[RandGen-nPr.ipynb](/notebooks/RandGen-nPr.ipynb)** 
   - generate random permutations nPr
-- **[RandGen-nPr-O.ipynb](/python/RandGen-nPr-O.ipynb)** 
+- **[RandGen-nPr-O.ipynb](/notebooks/RandGen-nPr-O.ipynb)** 
   - generate O, random permutations nPr (n=candidates, r=preferences, O=number of permutations to generate)
   - calculate "votes" euclidean distance and average euclidean distance for each transfer
   - classify as "irregular" write to irregular csv file
-- **[RandGen-nPr-range-of-r.ipynb](/python/RandGen-nPr-range-of-r.ipynb)** 
+- **[RandGen-nPr-range-of-r.ipynb](/notebooks/RandGen-nPr-range-of-r.ipynb)** 
   - generate random permutations for range r values
 - **[concatBatch.py](/python/concatBatch.py)**
   - concatenate(merge) *regular* and *irregular* csv files
   - remove duplicates keeping sequence classified as regular
   - writes to merged csv file
 
-### Machine Learning ([MLElectionData](/python/MLElectionData.ipynb))
+### Machine Learning ([MLElectionData](/notebooks/MLElectionData.ipynb))
 - split dataset into test and train
 - test machine learning algorithms on dataset measure performance
 - tune model
