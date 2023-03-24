@@ -2,6 +2,73 @@
 Ballot as a Signature in PR-STV elections
 Using the permutaitons in a single transferrable vote to uniquely identify a ballot.
 
+
+## Permutations (without repetition)
+While the number of permutations of the completing a ballot for the all candidates is factorial(n) or
+n!
+The number of permutations(P) for r preferences cast, for an election with n candidates is
+
+nPr = P(n,r) = n!/(n-r)!    
+
+Calculate number of permutations **[PermutationsCalc.py](/python/py/PermutationsCalc.py)**  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PermutationsCalc.ipynb)
+
+## Tasks
+### Data Gathering and Generation
+- plot irish political parites on the Political Compass ([politicalcompass.org](https://politicalcompass.org/ireland2020))
+- **[PoliticalCompassParties.ipynb](/python/PoliticalCompassParties.ipynb)** - plot parties on political compass axes [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PoliticalCompassParties.ipynb)
+- **[PlotRegularVoteTransfers.ipynb](/python/PlotRegularVoteTransfers.ipynb)** - plot regular voting pattern (between similar ideologies) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PlotRegularVoteTransfers.ipynb)
+- **[PlotIrregularVoteTransfers.ipynb](/python/PlotIrregularVoteTransfers.ipynb)** - plot irregular voting pattern.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/STV-Ballot-as-a-signature/blob/master/python/PlotIrregularVoteTransfers.ipynb)
+
+- **[VoteDataAnalysis.ipynb](/python/VoteDataAnalysis.ipynb)** - analyse data from e-voting trial from 2002
+  - number of preferences cast
+  - mode
+  - median
+  - mean
+  - calculate duplicates (remove duplicates)
+  - calculate number of unique votes for each vote sequence
+  - caclulate possible permutations for each pref nonPr and % used
+  - generate histograms number of votes cast for each preference
+  - generate pie breakdown of how many preferences voters cast
+  - generate bar chart ratio of votes used to possible votes cast for each preference
+  - calculate "votes" euclidean distance and average euclidean distance for each transfer
+  - classify as "regular" write to *regular* csv file
+- **[GenAll-nPr.py](/python/py/GenAll-nPr.py)** 
+  - generate all permutations nPr (r=7)
+- **[GenVoteDataAnalysis.ipynb](/python/GenVoteDataAnalysis.ipynb)** - analyse generated data
+  - calculate "votes" euclidean distance and average euclidean distance for each transfer
+  - select rows with euclidean distance greater than max of "Regular" votes
+  - classify as "Irregular" write to *irregular* csv file
+- **[RandGen-nPr.ipynb](/python/RandGen-nPr.ipynb)** 
+  - generate random permutations nPr
+- **[RandGen-nPr-O.ipynb](/python/RandGen-nPr-O.ipynb)** 
+  - generate O, random permutations nPr (n=candidates, r=preferences, O=number of permutations to generate)
+  - calculate "votes" euclidean distance and average euclidean distance for each transfer
+  - classify as "irregular" write to irregular csv file
+- **[RandGen-nPr-range-of-r.ipynb](/python/RandGen-nPr-range-of-r.ipynb)** 
+  - generate random permutations for range r values
+- **[concatBatch.py](/python/concatBatch.py)**
+  - concatenate(merge) *regular* and *irregular* csv files
+  - remove duplicates keeping sequence classified as regular
+  - writes to merged csv file
+
+### Machine Learning ([MLElectionData](/python/MLElectionData.ipynb))
+- split dataset into test and train
+- test machine learning algorithms on dataset measure performance
+- tune model
+- evaluate performance
+
+### Simulated Election using Generated data
+- Run STV with generated data showing synthetic data alters election. Modify **[rcv.py](/python/rcv.py)** to use a fixed droop quota like in Irish Elections, to simulate election.
+
+## Data Used from e-voting trial from 2002
+- [Meath2002.csv](/data/Meath2002.csv)
+- [DublinNorth2002.csv](/data/DublinNorth2002.csv)
+- [DublinWest2002.csv](/data/DublinWest2002.csv)
+
+
+
+
+
 # Political Compass
 The politcal compass is tool used to position political opinions of an individual or party on a specturm, in this case a two dime
 sional spectrum, with a left-right x-axis and authoritarian-libertarian y-axis, although other metrics could be used.
