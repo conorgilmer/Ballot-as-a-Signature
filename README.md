@@ -14,7 +14,7 @@ Calculate number of permutations **[PermutationsCalc.py](/python/PermutationsCal
 
 ## Tasks
 ### Data Gathering and Generation
-- plot irish political parites on the Political Compass ([politicalcompass.org](https://politicalcompass.org/ireland2020))
+- plot irish political parites on the Political Compass ([politicalcompass.org](https://politicalcompass.org/ireland2020)), [Political Compas Data](/data/pc.csv)
 - **[PoliticalCompassParties.ipynb](/notebooks/PoliticalCompassParties.ipynb)** - plot parties on political compass axes [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/PoliticalCompassParties.ipynb)
 - **[PlotRegularVoteTransfers.ipynb](/notebooks/PlotRegularVoteTransfers.ipynb)** - plot regular voting pattern (between similar ideologies) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/PlotRegularVoteTransfers.ipynb)
 - **[PlotIrregularVoteTransfers.ipynb](/notebooks/PlotIrregularVoteTransfers.ipynb)** - plot irregular voting pattern.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/PlotIrregularVoteTransfers.ipynb)
