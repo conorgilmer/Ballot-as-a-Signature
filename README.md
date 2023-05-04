@@ -61,9 +61,10 @@ Calculate number of permutations **[PermutationsCalc.py](/python/PermutationsCal
 - evaluate performance
 ### Machine Learning KNN
 - the unsupervised ML model is used K-Nearest Neighbour 
-- - **[MLA_KNN_DublinNorth.ipynb](/notebooks/MLA_KNN_DublinNorth.ipynb)** 
-- - **[MLA_KNN_DublinWest.ipynb](/notebooks/MLA_KNN_DublinWest.ipynb)** 
-- - **[MLA_KNN_Meath.ipynb](/notebooks/MLA_KNN_Meath.ipynb)** 
+  - **[MLA_KNN_DublinNorth.ipynb](/notebooks/MLA_KNN_DublinNorth.ipynb)** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/MLA_KNN_DublinNorth.ipynb)
+
+  - **[MLA_KNN_DublinWest.ipynb](/notebooks/MLA_KNN_DublinWest.ipynb)** 
+  - **[MLA_KNN_Meath.ipynb](/notebooks/MLA_KNN_Meath.ipynb)** 
 
 
 ### Simulated Election using Generated data(in the future)
