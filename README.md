@@ -50,6 +50,9 @@ Calculate number of permutations **[PermutationsCalc.py](/python/PermutationsCal
   - concatenate(merge) *regular* and *irregular* csv files
   - remove duplicates keeping sequence classified as regular
   - writes to merged csv file
+- - **[DataPrep.ipynb](/notebooks/DataPrep.ipynb)** 
+  - format csv file (constituency2002_merged_dist.csv) from actual and generated data with euclidean distance calculated between each vote transfer
+
 
 ### Machine Learning ([MLElectionData](/notebooks/MLElectionData.ipynb))
 - split dataset into test and train
@@ -57,7 +60,7 @@ Calculate number of permutations **[PermutationsCalc.py](/python/PermutationsCal
 - tune model
 - evaluate performance
 
-### Simulated Election using Generated data
+### Simulated Election using Generated data(in the future)
 - Run STV with generated data showing synthetic data alters election. Modify **[rcv.py](/python/rcv.py)** to use a fixed droop quota like in Irish Elections, to simulate election.
 
 ## Data Used from e-voting trial from 2002
