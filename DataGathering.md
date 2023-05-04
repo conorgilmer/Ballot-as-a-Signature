@@ -5,3 +5,13 @@ Data used in the project will include the actual vote data from the 2002 electio
 - [DublinNorth2002.csv](/data/DublinNorth2002.csv)
 - [DublinWest2002.csv](/data/DublinWest2002.csv)
 
+## Data e-voting trial data merged with generated data 
+- [Meath2002_merged.csv](/data/processed/Meath2002_merged.csv)
+- [DublinNorth2002_merged.csv](/data/processed/DublinNorth2002_merged.csv)
+- [DublinWest2002_merged.csv](/data/processed/DublinWest2002_merged.csv)
+
+
+## Data with euclidean distance travelled for each vote transfer 
+- [Meath2002_merged.csv](/data/processed/Meath2002_merged_dist.csv)
+- [DublinNorth2002_merged_dist.csv](/data/processed/DublinNorth2002_merged_dist.csv)
+- [DublinWest2002_merged_dist.csv](/data/processed/DublinWest2002_merged_dist.csv)
