@@ -66,6 +66,13 @@ Calculate number of permutations **[PermutationsCalc.py](/python/PermutationsCal
   - **[MLA_KNN_DublinWest.ipynb](/notebooks/MLA_KNN_DublinWest.ipynb)** 
   - **[MLA_KNN_Meath.ipynb](/notebooks/MLA_KNN_Meath.ipynb)** 
 
+### Machine Learning Naive-Bayes
+- the unsupervised ML model is used Naive Bayes Algorithm 
+  - **[MLA_NB_DublinNorth.ipynb](/notebooks/MLA_NB_DublinNorth.ipynb)** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conorgilmer/Ballot-as-a-signature/blob/master/notebooks/MLA_NB_DublinNorth.ipynb)
+
+  - **[MLA_NB_DublinWest.ipynb](/notebooks/MLA_NB_DublinWest.ipynb)** 
+  - **[MLA_NB_Meath.ipynb](/notebooks/MLA_NB_Meath.ipynb)** 
+
 
 ### Simulated Election using Generated data(in the future)
 - Run STV with generated data showing synthetic data alters election. Modify **[rcv.py](/python/rcv.py)** to use a fixed droop quota like in Irish Elections, to simulate election.
