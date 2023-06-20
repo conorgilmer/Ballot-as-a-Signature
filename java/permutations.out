@@ -1,0 +1,41 @@
+Permutations for 
+Dublin West
+Candidates = 9, preferences = 1. Permutations (nPr) = 9
+Candidates = 9, preferences = 2. Permutations (nPr) = 72
+Candidates = 9, preferences = 3. Permutations (nPr) = 504
+Candidates = 9, preferences = 4. Permutations (nPr) = 3024
+Candidates = 9, preferences = 5. Permutations (nPr) = 15120
+Candidates = 9, preferences = 6. Permutations (nPr) = 60480
+Candidates = 9, preferences = 7. Permutations (nPr) = 181440
+Candidates = 9, preferences = 8. Permutations (nPr) = 362880
+Candidates = 9, preferences = 9. Permutations (nPr) = 362880
+Permutations for 
+Dublin North
+Candidates = 12, preferences = 1. Permutations (nPr) = 12
+Candidates = 12, preferences = 2. Permutations (nPr) = 132
+Candidates = 12, preferences = 3. Permutations (nPr) = 1320
+Candidates = 12, preferences = 4. Permutations (nPr) = 11880
+Candidates = 12, preferences = 5. Permutations (nPr) = 95040
+Candidates = 12, preferences = 6. Permutations (nPr) = 665280
+Candidates = 12, preferences = 7. Permutations (nPr) = 3991680
+Candidates = 12, preferences = 8. Permutations (nPr) = 19958400
+Candidates = 12, preferences = 9. Permutations (nPr) = 79833600
+Candidates = 12, preferences = 10. Permutations (nPr) = 239500800
+Candidates = 12, preferences = 11. Permutations (nPr) = 479001600
+Candidates = 12, preferences = 12. Permutations (nPr) = 479001600
+Permutations for 
+Meath
+Candidates = 14, preferences = 1. Permutations (nPr) = 0
+Candidates = 14, preferences = 2. Permutations (nPr) = 2
+Candidates = 14, preferences = 3. Permutations (nPr) = 32
+Candidates = 14, preferences = 4. Permutations (nPr) = 352
+Candidates = 14, preferences = 5. Permutations (nPr) = 3524
+Candidates = 14, preferences = 6. Permutations (nPr) = 31719
+Candidates = 14, preferences = 7. Permutations (nPr) = 253758
+Candidates = 14, preferences = 8. Permutations (nPr) = 1776312
+Candidates = 14, preferences = 9. Permutations (nPr) = 10657877
+Candidates = 14, preferences = 10. Permutations (nPr) = 53289386
+Candidates = 14, preferences = 11. Permutations (nPr) = 213157546
+Candidates = 14, preferences = 12. Permutations (nPr) = 639472640
+Candidates = 14, preferences = 13. Permutations (nPr) = 1278945280
+Candidates = 14, preferences = 14. Permutations (nPr) = 1278945280
