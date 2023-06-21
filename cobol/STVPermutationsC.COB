@@ -5,9 +5,19 @@
       * Tectonics: cobc -x -fintrinsics=FACTORIAL
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. STVPermutations.
+       PROGRAM-ID. STVPermutationsC.
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+       SELECT OUTPUT-FILE
+           ASSIGN TO 'permutations_output.dat'
+           ORGANIZATION IS LINE SEQUENTIAL
+           ACCESS MODE IS SEQUENTIAL.
        DATA DIVISION.
        FILE SECTION.
+       FD  OUTPUT-FILE         RECORD CONTAINS 50 CHARACTERS.
+       01  OUTPUT-RECORD.
+         05 OUT-REC-ROW          PIC X(50).
 
        WORKING-STORAGE SECTION.
        77 I PIC 9(12).
@@ -35,11 +45,26 @@
            05 out-perm       PIC Z(11)9.
 
        PROCEDURE DIVISION.
+       display '*** Starting ***'.
+       START-ROUTINE.
+           display 'Opening files'.
+      *     OPEN INPUT INPUT-FILE.
+           display "open file for output".
+           OPEN OUTPUT OUTPUT-FILE.
+
+       OUTPUT-TITLE-ROUTINE.
+           move OUTPUT-TITLE to OUT-REC-ROW.
+           write OUTPUT-RECORD.
+
+
        MAIN-PROCEDURE.
            DISPLAY "Enter the number of Candidates N ".
            ACCEPT N.
            DISPLAY OUTPUT-TITLE.
            PERFORM PERM-PARA varying R FROM 1 BY 1 UNTIL R > N.
+           display "closing output file".
+           close OUTPUT-FILE.
+           display '*** The End ***'.
            STOP RUN.
 
        PERM-PARA.
@@ -54,6 +79,8 @@
            move U to Z.
            MOVE Z to out-perm.
            DISPLAY OUTPUT-ROW.
+           MOVE OUTPUT-ROW to OUT-REC-ROW.
+           write OUTPUT-RECORD.
 
 
-       END PROGRAM STVPermutations.
+       END PROGRAM STVPermutationsC.

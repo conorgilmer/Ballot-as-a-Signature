@@ -7,8 +7,10 @@ Factorial is an intrinsic keyword hence you import a c-library to use it, it see
 ## Programmes
 - Fact.cob - Calculate a Factorial using a loop 
 - FactC.cob - Calculate a Factorial using the intrinsic function
-- STVPermutaions.cob - get value for n and r and calculate nPr
-- STVPermutationsnPr.COB - calculate nPr for all values of r
+- STVPermutaions.cob - get value for n and r and calculate nPr for all values of r
+- STVPermutaionsC.COB - get value for n and r and calculate nPr for all values of r using intrinsic function
+- STVPermutationsnPr.COB - calculate nPr for n and r
+- STVPermutationsnPrC.COB - calculate nPr for n and r using intrinsic function
 
 ## Compiling for Intrinsic Functions 
- cobc -x -fintrinsics=FACTORIAL MyP:wqrog.cob  
+ cobc -x -fintrinsics=FACTORIAL MyProg.cob  
