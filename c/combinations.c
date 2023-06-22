@@ -30,7 +30,7 @@ int main(){
     comb = (fact(n)/fact(n-r)) * fact(r);
 //    printf("fact (n) %d\n", fact(n));
 //    printf("fact (n-r) %d\n", fact(n-r));
-    printf("Combinations of %dP%d is: %d",n,r,comb);
+    printf("Combinations of %dC%d is: %d",n,r,comb);
 
     printf("\n");
     return 0;
